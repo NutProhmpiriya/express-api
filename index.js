@@ -1,5 +1,5 @@
 import express from 'express';
-import intiRoyter from './controllers/index.js';
+import intiRouter from './controllers/index.js';
 const app = express();
 const port = 5001;
 
@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-await intiRoyter(app)
+await intiRouter(app)
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`)
